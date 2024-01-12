@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getComputerChoice(){
+            let choices = ["rock", "paper", "scissors"];
+            let randomizer = Math.floor(Math.random() * choices.length);
+            return choices[randomizer]
+        }
+        console.log("Computer:", getComputerChoice())
+
+        function getPlayerChoice()
+        {
+            playerChoice = prompt("Rock, Paper or Scissors?")
+
+            while (playerChoice.toLowerCase() != "rock" && playerChoice.toLowerCase() != "paper"&& playerChoice.toLowerCase() != "scissors") {
+                playerChoice = prompt("Rock, Paper or Scissors?")
+            }
+
+            return playerChoice.toLowerCase()
+            
+        }
+
+        console.log(getPlayerChoice())
+ 
+        
+    </script>
+</body>
+</html>
